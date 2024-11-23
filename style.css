@@ -1,20 +1,71 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(120deg, #06f8a7, #0baefa); 
-    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; 
+    color: #2e7d32; 
+    margin: 0;
+    padding: 0;
 }
 
-.navbar {
-    background-color: rgba(7, 199, 206, 0.9) !important;
-    color : #000000; 
+header {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
 }
 
+nav {
+    background-color: #000000; 
+    padding: 10px;
+    text-align: center;
+}
 
-.nav-link {
+nav a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .container {
-    padding-top: 50px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.soal {
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 15px;
+    border: 1px solid #4CAF50; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    min-height: 300px; 
+    width: 90%; 
+    max-width: 800px; 
+    margin: 20px auto; 
+}
+
+.soal h3 {
+    color: #3c9e4f; 
+}
+
+.soal p {
+    line-height: 1.6;
+}
+
+p > mathjax-container {
+    color: #2e7d32; 
+}
+
+footer {
+    background-color: #2E7D32; 
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 

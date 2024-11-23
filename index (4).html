@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kelompok</title>
+    <style>
+     
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+        }
+
+        
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+       
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #f0f8ff;
+        }
+
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .member {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        .member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid #fff;
+        }
+
+        .member-info {
+            text-align: left;
+            color: #f0f8ff;
+        }
+
+        .member-info p {
+            margin: 4px 0;
+            font-size: 1rem;
+        }
+
+        
+        .animated-cartoon {
+            width: 150px;
+            position: absolute;
+            top: 50%;
+            right: -180px;
+            animation: float 4s ease-in-out infinite;
+            z-index: -1;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+       
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #2575fc;
+            background-color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Nama Kelompok -->
+        <h1>Profil Kelompok</h1>
+        <p>Nama Kelompok: <strong>Kelompok Kalkulus A</strong></p>
+
+        <!-- Daftar Nama Anggota dengan NPM, Peran, dan Foto -->
+        <h2>Anggota Kelompok</h2>
+        <ul>
+            <li class="member">
+                <img src="https://via.placeholder.com/80" alt="Foto Ahmad Fikri">
+                <div class="member-info">
+                    <p><strong>Nama:</strong> Anggi Salsabila Mareta Yanti</p>
+                    <p><strong>NPM:</strong> 247006111038</p>
+                    <p><strong>Peran:</strong> yyy</p>
+                </div>
+            </li>
+            <li class="member">
+                <img src="https://via.placeholder.com/80" alt="Foto Budi Santoso">
+                <div class="member-info">
+                    <p><strong>Nama:</strong> Syaila Fa Agna</p>
+                    <p><strong>NPM:</strong> 247006111047</p>
+                    <p><strong>Peran:</strong> yyyy</p>
+                </div>
+            </li>
+            <li class="member">
+                <img src="https://via.placeholder.com/80" alt="Foto Citra Dewi">
+                <div class="member-info">
+                    <p><strong>Nama:</strong> Chety Ketrianur</p>
+                    <p><strong>NPM:</strong> 247006111048</p>
+                    <p><strong>Peran:</strong> yyyy</p>
+                </div>
+            </li>
+            <li class="member">
+                <img src="https://via.placeholder.com/80" alt="Foto Deni Kurniawan">
+                <div class="member-info">
+                    <p><strong>Nama:</strong> Faisal Hadi</p>
+                    <p><strong>NPM:</strong> 247006111052</p>
+                    <p><strong>Peran:</strong> yyy</p>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Tombol Kembali -->
+        <a href="#" class="back-button">Kembali</a>
+    </div>
+
+    <!-- Animasi Kartun -->
+    <img src="https://via.placeholder.com/150x150.png?text=Cartoon" alt="Kartun Bergerak" class="animated-cartoon">
+</body>
+</html>

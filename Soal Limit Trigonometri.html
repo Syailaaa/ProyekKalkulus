@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Soal Limit Matematika</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Contoh Soal Limit Trigonometri</h1>
+    </header>
+
+    <nav>
+        <a href="Soal Limit Fungsi Aljabar.html">Limit Fungsi Aljabar</a>
+        <a href="Soal Limit Kanan Kiri.html">Limit Kanan Kiri</a>
+        <a href="Soal Limit Trigonometri.html">Limit Trigonometri</a>
+    </nav>
+<div class="soal" id="soal1">
+    <h3 style="text-align: center;">Limit Trigonometri</h3>
+    <p><strong>Soal 1: </strong></p>
+    <p>Hitung nilai \(x\) dari persamaan berikut:</p>
+        \[
+        \lim_{{x \to 0}} \frac{{1 - \cos x}}{x}
+        \]
+    </p>
+    <p><strong>Penyelesaian: </strong></p>
+    <p>Kita dapat menyederhanakan fungsi limit dengan mengalikan pembilang dan penyebut dengan \(1 + \cos x\) dan kemudian menggunakan teorema limit trigonometri. Perhatikan langkah berikut:</p>
+        \[
+        \lim_{{x \to 0}} \frac{{1 - \cos x}}{x} = \lim_{{x \to 0}} \frac{{1 - \cos x}}{{x}} \cdot \frac{{1 + \cos x}}{{1 + \cos x}}
+        \]
+        \[
+        = \lim_{{x \to 0}} \frac{{1 - \cos^2 x}}{{x(1 + \cos x)}} = \lim_{{x \to 0}} \frac{{\sin^2 x}}{{x(1 + \cos x)}}
+        \]
+        \[
+        = \lim_{{x \to 0}} \frac{{\sin x}}{{1 + \cos x}} \cdot \lim_{{x \to 0}} \frac{{\sin x}}{x}
+        \]
+        \[
+        = \frac{{\lim_{{x \to 0}} \sin x}}{{\lim_{{x \to 0}} (1 + \cos x)}} \cdot \lim_{{x \to 0}} \frac{{\sin x}}{x}
+        \]
+        \[
+        = \frac{{\sin 0}}{{1 + \cos 0}} \cdot 1 = \frac{{0}}{{1 + 1}} \cdot 1 = 0
+        \]
+    </p>
+    <p><strong>Jadi, nilai limit tersebut adalah \(0 \).</strong></p>
+</div>
+
+<div class="soal" id="soal2">
+    <p><strong>Soal 2:</strong></p>
+    <p>Hitung limit berikut:</p>
+    <p>
+        \[
+        \lim_{{x \to 0}} \frac{{\sin(x)}}{{x}}
+        \]
+    </p>
+
+    <p><strong>Penyelesaian:</strong></p>
+    <p>Untuk soal ini, kita gunakan limit standar yang sudah dikenal dalam kalkulus:</p>
+    <p>
+        \[
+        \lim_{{x \to 0}} \frac{{\sin(x)}}{{x}} = 1
+        \]
+    </p>
+    <p><strong>Jadi, nilai dari limit tersebut adalah \( 1 \).</strong></p>
+</div>
+
+    <div class="soal" id="soal3">
+        <p><strong>Soal 3:</strong></p>
+        <p>Hitung nilai limit berikut:</p>
+            \[
+            \lim_{{x \to 0}} \frac{{1 - \cos 2x}}{{1 - \cos x}}
+            \]
+        </p>
+        <p><strong>Penyelesaian:</strong></p>
+        <p>Dengan menggunakan rumus identitas trigonometri, penyelesaian limit dalam soal ini adalah:</p>
+            \[
+            \lim_{{x \to 0}} \frac{{1 - \cos 2x}}{{1 - \cos x}} = \lim_{{x \to 0}} \frac{{2 \sin^2 x}}{{2 \sin^2 \frac{1}{2}x}}
+            \]
+            \[
+            = \lim_{{x \to 0}} \frac{{\sin x}}{{\sin \frac{1}{2}x}} \cdot \lim_{{x \to 0}} \frac{{\sin x}}{{\sin \frac{1}{2}x}}
+            \]
+            \[
+            = \left(\frac{{\lim_{{x \to 0}} \sin x}}{{\lim_{{x \to 0}} \sin \frac{1}{2}x}}\right)^2
+            \]
+            \[
+            = \left(\frac{1}{\frac{1}{2}}\right)^2 = 2 \cdot 2 = 4
+            \]
+        </p>
+        <p><strong>Jadi, nilai limit tersebut adalah \(4 \).</strong></p>
+    </div>
+</body>

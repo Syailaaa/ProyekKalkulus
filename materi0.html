@@ -1,0 +1,224 @@
+<html lang="en" style="height: 100%;">
+ <head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Limit Kalkulus - Limit Fungsi Aljabar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/materi0.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script">
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          },
+          options: {
+            renderActions: {
+              findScript: [10, function (doc) {
+                // Menambahkan gaya responsif
+                doc.options.styles = {
+                  'display': 'inline-block',
+                  'max-width': '100%', // Memastikan tidak melampaui lebar kontainer
+                  'overflow-wrap': 'break-word' // Memungkinkan teks untuk membungkus
+                };
+              }, '']
+            }
+          }
+        };
+      </script>
+  <style>
+        footer {
+            background-color: #04b9aa;
+            padding: 20px;
+            text-align: center;
+        }
+        .gambar-limit {
+            max-width: 100%;
+            height: auto;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid;
+            padding: 0 5px;
+        }
+        .fraction .denominator {
+            padding-top: 2px;
+        }
+  </style>
+ </head>
+ <body>
+    <header class="flex-container">
+        <h1 class="text-center">
+            Materi Limit Kalkulus - Limit Fungsi Aljabar
+        </h1>
+        <p class="text-center">
+            Belajar konsep dasar limit dalam kalkulus.
+        </p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="home.html">
+            <span class="font-bold text-white">Alge</span><span class="fond-ligth text-dark">braic</span>
+            <span class="font-bold text-white">Li</span><span class="fond-ligth text-dark">mits</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Profile Kelompok</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Materi</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="materi0.html">Limit Fungsi Aljabar</a>
+                        <a class="dropdown-item" href="#">Limit Kanan Kiri
+                        </a>
+                        <a class="dropdown-item" href="#">Limit Trigonometri</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contoh Latihan Soal</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Contoh Soal</a>
+                        <a class="dropdown-item" href="#">Latihan Soal</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="section-wrapper">
+        <section>
+        <h2>
+            Apa itu Limit?
+        </h2>
+        <p>
+            limit bisa berarti pendekatan dan berhubungan dengan batas.
+        </p>
+        </section>
+        <section>
+        <h2>
+            Definisi Limit Fungsi
+        </h2>
+        <p>
+            Limit adalah nilai yang didekati oleh sebuah fungsi atau deret saat variabel mendekati suatu nilai tertentu. <br>Definisi dari limit menyatakan bahwa suatu fungsi \(f(x)\) akan mendekati suatu nilai tertentu jika \(x\) mendekati nilai tertentu.
+        </p>
+        </section>
+        <section>
+        <h2>
+            Notasi Limit:
+        </h2>
+        <p><ul>
+            $$ {\displaystyle \lim_{{x \to a}} f(x) \text{ dimana } x \neq a} $$
+            </ul></p>
+        <p>
+            Sebuah fungsi punya limit di titik a, jika limit kiri dan limit kanan bernilai sama di titik \({\lim_{{x \to a^-}} f(x) = \lim_{{x \to a^+}} f(x) = L}\)
+        </p>
+        <p></p>
+        </section>
+        <section>
+            <h2>Limit Fungsi Aljabar</h2>
+            <p>Terdapat tiga metode untuk mengerjakan limit fungsi aljabar, yakni metode substitusi, metode pemfaktoran, dan metode perkalian dengan akar sekawan</p>
+            <h4>Metode Substitusi</h4>
+            <p>Metode substitusi merupakan yang paling mudah karena untuk menentukan hasil limit kita hanya perlu mensubstitusi atau memasukkan secara langsung nilai ke dalam fungsi pada limit.</p>
+            <h4>Metode Pemfaktoran</h4>
+            <p>Untuk menyelesaikan limit yang tidak bis diselesaikan oleh metode substitusi, kita perlu memfaktorkan fungsinya terlebih dahulu, baru kemudian kita mensubstitusikan nilainya.</p>
+            <h4>Metode Perkalian dengan Akar Sekawan</h4>
+            <p></p>Inti dari metode ini yaitu mengalikan fungsi pada limit dengan akar sekawannya.</p>
+        </section>
+        <section class="flex-container">
+        <h2>
+            Sifat - Sifat Dasar Limit Fungsi
+        </h2>
+        <ul>
+            <li>\(\displaystyle\lim_{{x \to c}} k = k\)</li>
+            <li>\(\displaystyle\lim_{{x \to c}} x = c\)</li>
+            <li>
+                <p><b>Jika \(\lim_{{x \to a^-}} f(x)\) dan \(\lim_{{x \to a^+}} f(x)\), maka
+                \(\displaystyle\lim_{{x \to c}} kf(x) = k \cdot \lim_{{x \to c}} f(x)\)</b></p>
+            </li>
+        </ul>
+        </section>
+        <section>
+        <h2>
+            Aturan Dasar Limit
+        </h2>
+        <ul>
+            <li>
+                \(\displaystyle \lim_{{x \to c}} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\)
+            </li>
+            <li>
+                \(\displaystyle\lim_{{x \to c}} [f(x) - g(x)] = \lim_{x \to c} f(x) - \lim_{x \to c} g(x)\)
+            </li>
+            <li>
+                \(\displaystyle\lim_{{x \to c}} [f(x).g(x)] = \lim_{x \to c} f(x).\lim_{x \to c} g(x)\)
+            </li>
+            <li>
+                \(\displaystyle\lim_{{x \to c}} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\)
+            </li>
+            <li>
+                \(\displaystyle\lim_{{x \to c}} [f(x)]^n = [\lim_{x \to c} f(x)]^n\)
+            </li>
+            <li>
+            \(\displaystyle\lim_{{x \to c}} \sqrt[n]{f(x)} = \sqrt[n]{\lim_{x \to c} f(x)}\)
+            </li>
+        </ul>
+        </section>
+        <section>
+        <h2>
+            Contoh Soal Limit
+        </h2>
+        <p>
+            <b>1. Hitung Limit</b>
+        </p>
+        <p>
+            \(\displaystyle \lim_{x \to 3} \frac{x^2-9}{x-3}\)
+        </p>
+        <p><em>Jawaban :</em></p>
+        <p>
+            \(\displaystyle\lim_{x \to 3} \frac{x^2-9}{x-3} = \displaystyle\lim_{x \to 3} \frac {(x-3)(x+3)}{x-3} = \displaystyle\lim_{x \to 3} x+3\)
+        </p>
+        <p>
+            \(\text {maka, }\displaystyle\lim_{x \to 3} x+3 = \displaystyle\lim_{x \to 3} 3+3 = 6\)
+        </p>
+        </section>
+<!--        <section>
+        <h2>
+            Contoh Soal
+        </h2>
+        <p>
+            <strong>
+            Contoh 1:
+            </strong>
+            Temukan limit dari \(f(x) = x^2\) ketika \(x\) mendekati 3
+        </p>
+        <p>
+            <em>
+            Jawaban:
+            </em></p>
+            <p>\(\displaystyle\lim_{x \to 3} x^2= 3^2 = 9\)
+        </p>
+        </section>-->
+    </div>
+    <!-- <footer>
+        <img alt="Logo Kelompok " class="logoKelompok" height="400" src="" width="600"/>
+        <p>Copyright &copy; 2022 Kelompok 1</p>
+        <p>© 2024 Kalkulus Materi Limit. Semua Hak Dilindungi.</p>
+    </footer> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+</body>
+</html>

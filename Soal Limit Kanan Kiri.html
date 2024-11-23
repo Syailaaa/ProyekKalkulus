@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Soal Limit Matematika</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Contoh Soal Limit Kanan Kiri</h1>
+    </header>
+
+    <nav>
+        <a href="Soal Limit Fungsi Aljabar.html">Limit Fungsi Aljabar</a>
+        <a href="Soal Limit Kanan Kiri.html">Limit Kanan Kiri</a>
+        <a href="Soal Limit Trigonometri.html">Limit Trigonometri</a>
+    </nav>
+
+    <div class="soal" id="soal1">
+        <h3 style="text-align: center;">Limit Kiri dan Limit Kanan</h3>
+        <p><strong>Soal 1: </strong></p>
+        <p>
+            <i>lim</i> <b>f</b>(x) = <b>L</b> jika dan hanya jika 
+            <i>lim</i> <b>f</b>(x) <sub>x→c⁻</sub> = <i>lim</i> <b>f</b>(x) <sub>x→c⁺</sub> = <b>L</b>.
+        </p>
+            <p>
+                \( f(x) = 
+                \begin{cases} 
+                2 − x ,  x \geq 1 \\
+                x² ,   x &lt 1 
+                \end{cases}
+                \)
+            </p>
+            <p>
+                Tentukan <i>lim</i> <b>f</b>(x) <sub>x→1⁻</sub>, 
+                <i>lim</i> <b>f</b>(x) <sub>x→1⁺</sub>, 
+                dan <i>lim</i> <b>f</b>(x) <sub>x→1</sub>.
+            </p>
+        
+            <p><strong>Penyelesaian:</strong></p>
+                <i>lim</i> <b>f</b>(x) <sub>x→1⁻</sub> = <i>lim</i> x² = 1<br>
+                <i>lim</i> <b>f</b>(x) <sub>x→1⁺</sub> = <i>lim</i> 2 − x = 1<br>
+                Karena <i>lim</i> <b>f</b>(x) <sub>x→1⁻</sub> = <i>lim</i> <b>f</b>(x) <sub>x→1⁺</sub>, maka <i>lim</i> <b>f</b>(x) <sub>x→1</sub> = 1.
+            </p>
+    </div>
+
+    <div class="soal" id="soal2">
+        <p><strong>Soal 2:</strong></p>
+        <p>
+            Misalkan fungsi <b>f(x)</b> didefinisikan sebagai:
+        </p>
+        <p>
+            \( f(x) = 
+            \begin{cases} 
+            3x + 2, x \geq 2 \\
+            x² − 1, x &lt 2
+            \end{cases}
+            \)
+        </p>
+        <p>
+            Tentukan: 
+            <br>1. <i>lim</i> <b>f</b>(x) <sub>x→2⁻</sub> 
+            <br>2. <i>lim</i> <b>f</b>(x) <sub>x→2⁺</sub> 
+            <br>3. <i>lim</i> <b>f</b>(x) <sub>x→2</sub>
+        </p>
+        <p><strong>Penyelesaian:</strong><p>
+        <p>
+            1. Untuk <i>lim</i> <b>f</b>(x) <sub>x→2⁻</sub>:<br>
+            Karena <b>x &lt; 2</b>, gunakan bagian fungsi <b>f(x) = x² − 1</b>.<br>
+            <i>lim</i> <b>f</b>(x) <sub>x→2⁻</sub> = <i>lim</i> (x² − 1) = 2² − 1 = <b>3</b>.
+        </p>
+        <p>
+            2. Untuk <i>lim</i> <b>f</b>(x) <sub>x→2⁺</sub>:<br>
+            Karena <b>x ≥ 2</b>, gunakan bagian fungsi <b>f(x) = 3x + 2</b>.<br>
+            <i>lim</i> <b>f</b>(x) <sub>x→2⁺</sub> = <i>lim</i> (3x + 2) = 3(2) + 2 = <b>8</b>.
+        </p>
+        <p>
+            3. Untuk <i>lim</i> <b>f</b>(x) <sub>x→2</sub>:<br>
+            Karena <i>lim</i> <b>f</b>(x) <sub>x→2⁻</sub> ≠ <i>lim</i> <b>f</b>(x) <sub>x→2⁺</sub>, maka <b>lim</b> <b>f</b>(x) <sub>x→2</sub> <b>tidak ada</b> (tidak terdefinisi).
+        </p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Soal Limit Matematika</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Contoh Soal Limit Fungsi Aljabar</h1>
+    </header>
+
+    <nav>
+        <a href="Soal Limit Fungsi Aljabar.html">Limit Fungsi Aljabar</a>
+        <a href="Soal Limit Kanan Kiri.html">Limit Kanan Kiri</a>
+        <a href="Soal Limit Trigonometri.html">Limit Trigonometri</a>
+    </nav>
+
+<div class="container">
+    <!-- Soal 1 -->
+    <div class="soal" id="soal1">
+        <h3 style="text-align: center;">Limit Fungsi Aljabar</h3>
+        <p><strong> Soal 1 : </strong></p>
+        <p>Hitung nilai limit berikut:</p>
+        <p>
+            \[
+            \lim_{{x \to 1}} \left( \frac{2}{x^2 - 1} - \frac{1}{x - 1} \right)
+            \]
+        </p>
+        <p><strong>Penyelesaian:</strong></p>
+        <p>
+            Pertama, kita sederhanakan ekspresi dengan memfaktorkan penyebut dari pecahan pertama:
+            \[
+            x^2 - 1 = (x - 1)(x + 1)
+            \]
+            sehingga ekspresi menjadi:
+            \[
+            \frac{2}{(x - 1)(x + 1)} - \frac{1}{x - 1}
+            \]
+        </p>
+        <p>
+            Lalu, kita samakan penyebut kedua pecahan tersebut:
+            \[
+            = \frac{2 - (x + 1)}{(x - 1)(x + 1)} = \frac{2 - x - 1}{(x - 1)(x + 1)} = \frac{1 - x}{(x - 1)(x + 1)}
+            \]
+        </p>
+        <p>
+            Karena \(1 - x = -(x - 1)\), kita peroleh:
+            \[
+            = \frac{-(x - 1)}{(x - 1)(x + 1)} = \frac{-1}{x + 1}
+            \]
+        </p>
+        <p>
+            Sekarang kita substitusi \(x = 1\):
+            \[
+            \lim_{{x \to 1}} \frac{-1}{x + 1} = \frac{-1}{1 + 1} = \frac{-1}{2}
+            \]
+        </p>
+        <p><strong>
+            Jadi, nilai dari limit tersebut adalah \(\frac{-1}{2} \). 
+        </strong></p>
+    </div>    
+        
+
+    <!-- Soal 2 -->
+    <div class="soal" id="soal2">
+        <p><strong>Soal 2:</strong></p>
+        <p>Hitung nilai limit berikut:</p>
+        <p>\[\lim_{{x \to 2}} \frac{{x^2 - 4}}{{x - 2}}\]</p>
+        <p><strong>Penyelesaian: </strong></p>
+        <p>Untuk menyelesaikan limit ini, kita bisa memfaktorkan pembilang:</p>
+        <p>\[\frac{{x^2 - 4}}{{x - 2}} = \frac{{(x + 2)(x - 2)}}{{x - 2}} = x + 2\]</p>
+        <p>Dengan demikian, \[\lim_{{x \to 2}} \frac{{x^2 - 4}}{{x - 2}} = 4\].</p>
+        <p><strong>Jadi, nilai dari limit tersebut adalah \(4 \). </strong></p>
+    </div>
+
+    <!-- Soal 3 -->
+
+        <div class="soal" id="soal3">
+            <p><strong>Soal 3:</strong></p>
+            <p>Hitung nilai limit berikut:</p>
+            <p>
+                \[
+                \lim_{{x \to 4}} \frac{\sqrt{x} - 2}{x - 4}
+                \]
+            </p>
+            <p><strong>Penyelesaian: </strong></p>
+            <p>Untuk menyelesaikan limit ini, kita dapat menggunakan trik rasionalisasi dengan mengalikan pembilang dan penyebut dengan konjugat dari pembilang:</p>
+            <p>
+                \[
+                \frac{\sqrt{x} - 2}{x - 4} \cdot \frac{\sqrt{x} + 2}{\sqrt{x} + 2} = \frac{x - 4}{(x - 4)(\sqrt{x} + 2)}
+                \]
+            </p>
+            <p>Sederhanakan ekspresi:</p>
+            <p>
+                \[
+                = \frac{1}{\sqrt{x} + 2}
+                \]
+            </p>
+            <p>Sekarang kita substitusi \( x = 4 \):</p>
+            <p>
+                \[
+                \lim_{{x \to 4}} \frac{1}{\sqrt{x} + 2} = \frac{1}{2 + 2} = \frac{1}{4}
+                \]
+            </p>
+            <p><strong>Jadi, nilai dari limit tersebut adalah \(\frac{1}{4} \). </strong></p>
+        </div>
+    </body>
+</html>    
