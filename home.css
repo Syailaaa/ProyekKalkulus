@@ -1,20 +1,52 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(90deg, #06f8a7, #0baefa); 
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(180deg, #c1e8ff, #7da0ca, #5483b3, #052659); 
     color: #ffffff; 
 }
 
 .navbar {
-    background-color: rgba(7, 199, 206, 0.9) !important;
+    background-color: rgba(2, 131, 196, 0.9) !important;
     color : #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
 }
 
 .nav-link {
     font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #112436; 
+    transform: scale(1.05) translateX(10px); 
+}
+.dropdown-menu {
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color : #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.dropdown.show .dropdown-menu {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.dropdown-item {
+    color: #ffffff;
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: scale(1.05) translateX(10px);
 }
 
 .container {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .img-Karikatur {

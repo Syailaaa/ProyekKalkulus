@@ -1,0 +1,139 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #00d9ff, #001a70);
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #06f8a7 !important;
+    color: white;
+    padding: 20px 0;
+    top: 0; 
+    z-index: 1000;
+}
+.navbar {
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color: #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    position: sticky; 
+    top: 0; 
+    z-index: 999; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+}
+.nav-link {
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    color: #112436; 
+    transform: scale(1.05) translateX(10px); 
+}
+.dropdown-menu {
+    background-color: rgba(2, 131, 196, 0.9) !important;
+    color : #000000; 
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.2);
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.dropdown.show .dropdown-menu {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.dropdown-item {
+    color: #ffffff;
+    font-weight: bold; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: scale(1.05) translateX(10px);
+}
+ul {
+    list-style-type: none; /* Menghilangkan bullet list */
+    padding: 0;           /* Menghilangkan padding default */
+}
+
+li {
+    margin: 10px 0;      /* Jarak antar item list */
+    overflow-wrap: break-word; /* Memungkinkan teks untuk membungkus */
+    word-wrap: break-word; /* Untuk mendukung browser yang lebih lama */
+    hyphens: auto;       /* Menambahkan pemisah kata jika perlu */
+}
+.section-wrapper {
+    margin: 20px; /* Jarak antar section wrapper */
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #04b9aa;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word; /* Memungkinkan teks untuk membungkus */
+    word-wrap: break-word;     /* Untuk mendukung browser yang lebih lama */
+    hyphens: auto;  
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: center;
+    color: #8e44ad;
+}
+
+.math-container {
+    max-width: 100%; /* Memastikan tidak melampaui lebar kontainer */
+    overflow-wrap: break-word; /* Memungkinkan teks untuk membungkus */
+    word-wrap: break-word; /* Untuk mendukung browser yang lebih lama */
+    hyphens: auto; /* Menambahkan pemisah kata jika perlu */
+    padding: 5px; /* Menambahkan padding jika perlu */
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+    .section-wrapper{
+        margin: 10px;
+    }
+}
