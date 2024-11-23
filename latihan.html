@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soal Limit Matematika</title>
+  <link rel="stylesheet" href="latihan.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Soal Limit Matematika</h1>
+
+    <!-- Soal 1 -->
+    <div class="question">
+      <p>Soal 1: $$\lim_{{x \to 2}} \frac{{3x - 6}}{{x + 2}}$$</p>
+      <input type="text" id="answer1" placeholder="Masukkan jawaban...">
+      <button onclick="checkAnswer(1, '0')">Cek Jawaban</button>
+      <p id="hint1" class="hint"></p>
+      <p id="solution1" class="solution"></p>
+    </div>
+
+    <!-- Soal 2 -->
+    <div class="question">
+      <p>Soal 2: $$\lim_{{x \to 4}} \frac{{3x^3 - 48x}}{{x^2 - 16}}$$</p>
+      <input type="text" id="answer2" placeholder="Masukkan jawaban...">
+      <button onclick="checkAnswer(2, '12')">Cek Jawaban</button>
+      <p id="hint2" class="hint"></p>
+      <p id="solution2" class="solution"></p>
+    </div>
+
+    <!-- Soal 3 -->
+    <div class="question">
+      <p>Soal 3: $$\lim_{{x \to 2}} \frac{{4 - x^2}}{{3 - \sqrt{{x^2 + 5}}}}$$</p>
+      <input type="text" id="answer3" placeholder="Masukkan jawaban...">
+      <button onclick="checkAnswer(3, '6')">Cek Jawaban</button>
+      <p id="hint3" class="hint"></p>
+      <p id="solution3" class="solution"></p>
+    </div>
+  </div>
+
+  <script src="latihan.js"></script>
+</body>
+</html>
