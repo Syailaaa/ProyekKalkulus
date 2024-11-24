@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #C1E8FF;
+            background: linear-gradient(180deg, #c1e8ff, #7da0ca, #5483b3, #052659); 
             color: #052659;
             padding: 20px;
         }
@@ -86,6 +86,30 @@
             color: black;
             border-radius: 5px;
             display: none;
+        }
+        .back-box {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #052659, #5483B3, #7DA0CA, #C1E8FF);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            padding: 20px;
+            background-color: #052659;
+            color: #FFFFFF;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            width: 200px;
+        }
+        .back-box:hover {
+            background-color: #5483B3;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -183,7 +207,7 @@
                 <p>Karena \( \lim_{x \to 0} \frac{\sin(x)}{x} = 1 \), maka hasilnya adalah 2.</p>
             </div>
         </div>
-
+        <a href="trigonometri.html" class="back-btn">Kembali</a>
     </div>
 
     <script>
