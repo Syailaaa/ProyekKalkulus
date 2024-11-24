@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Limit Trigonometri - Pembahasan Panjang</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C1E8FF;
+            color: #052659;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #7DA0CA;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #052659;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #5483B3;
+            border-radius: 8px;
+            color: #FFFFFF;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        .check-btn {
+            padding: 10px 15px;
+            border: none;
+            background-color: #052659;
+            color: #FFFFFF;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .check-btn:hover {
+            background-color: #7DA0CA;
+        }
+        .notification {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        .notification.success {
+            background-color: #4CAF50;
+            color: #FFFFFF;
+        }
+        .notification.error {
+            background-color: #F44336;
+            color: #FFFFFF;
+        }
+        .hint {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #FFD700;
+            border-radius: 5px;
+            display: none;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #C1E8FF;
+            color: black;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soal Limit Trigonometri - Pembahasan Panjang</h1>
+
+        <!-- Soal 1 (Trigonometri Biasa) -->
+        <div class="question" id="question1">
+            <h3>1. Tentukan \( \lim_{x \to 0} \frac{\sin(x)}{x} \)</h3>
+            <div class="input-group">
+                <label for="answer1">Jawaban:</label>
+                <input type="text" id="answer1">
+            </div>
+            <button class="check-btn" onclick="checkAnswer(1, '1')">Cek Jawaban</button>
+            <div class="notification" id="notification1"></div>
+            <div class="hint" id="hint1">
+                <strong>Hint:</strong> Gunakan limit dasar \( \lim_{x \to 0} \frac{\sin(x)}{x} = 1 \).
+            </div>
+            <div class="explanation" id="explanation1">
+                <strong>Pembahasan:</strong>
+                <p>Limit dasar yang kita gunakan untuk soal ini adalah:</p>
+                <p>
+                    \( \lim_{x \to 0} \frac{\sin(x)}{x} = 1
+                \)
+                </p>
+                <p>Jadi, hasil limitnya adalah 1.</p>
+            </div>
+        </div>
+
+        <!-- Soal 2 (Aturan Jumlah dan Selisih Dua Sudut) -->
+        <div class="question" id="question2">
+            <h3>2. Tentukan \( \lim_{x \to 0} \frac{\sin(2x) - \sin(x)}{x} \)</h3>
+            <div class="input-group">
+                <label for="answer2">Jawaban:</label>
+                <input type="text" id="answer2">
+            </div>
+            <button class="check-btn" onclick="checkAnswer(2, '1')">Cek Jawaban</button>
+            <div class="notification" id="notification2"></div>
+            <div class="hint" id="hint2">
+                <strong>Hint:</strong> Gunakan aturan jumlah dan selisih dua sudut.
+            </div>
+            <div class="explanation" id="explanation2">
+                <strong>Pembahasan:</strong>
+                <p>Untuk soal ini, kita akan menggunakan rumus identitas trigonometri untuk jumlah dan selisih dua sudut, yaitu:</p>
+                <p>
+                    \( \sin(A) - \sin(B) = 2 \cos\left(\frac{A + B}{2}\right) \sin\left(\frac{A - B}{2}\right)
+                \)
+                </p>
+                <p>Kita dapat mengganti \( A = 2x \) dan \( B = x \), maka:</p>
+                <p>
+                    \( \sin(2x) - \sin(x) = 2 \cos\left(\frac{2x + x}{2}\right) \sin\left(\frac{2x - x}{2}\right)
+                    = 2 \cos\left(\frac{3x}{2}\right) \sin\left(\frac{x}{2}\right)
+                \)
+                </p>
+                <p>Sehingga, limitnya menjadi:</p>
+                <p>
+                    \( \lim_{x \to 0} \frac{2 \cos\left(\frac{3x}{2}\right) \sin\left(\frac{x}{2}\right)}{x}
+                    = \lim_{x \to 0} \frac{2 \cos\left(\frac{3x}{2}\right)}{1} \cdot \frac{\sin\left(\frac{x}{2}\right)}{\frac{x}{2}} = 1
+                \)
+                </p>
+                <p>Karena \( \lim_{x \to 0} \frac{\sin\left(\frac{x}{2}\right)}{\frac{x}{2}} = 1 \) dan \( \cos(0) = 1 \), maka hasilnya adalah 1.</p>
+            </div>
+        </div>
+
+        <!-- Soal 3 (Rumus Trigonometri Sudut Ganda) -->
+        <div class="question" id="question3">
+            <h3>3. Tentukan \( \lim_{x \to 0} \frac{1 - \cos(2x)}{x^2} \)</h3>
+            <div class="input-group">
+                <label for="answer3">Jawaban:</label>
+                <input type="text" id="answer3">
+            </div>
+            <button class="check-btn" onclick="checkAnswer(3, '2')">Cek Jawaban</button>
+            <div class="notification" id="notification3"></div>
+            <div class="hint" id="hint3">
+                <strong>Hint:</strong> Gunakan rumus trigonometri sudut ganda \( \cos(2x) = 1 - 2\sin^2(x) \).
+            </div>
+            <div class="explanation" id="explanation3">
+                <strong>Pembahasan:</strong>
+                <p>Kita akan menggunakan rumus trigonometri sudut ganda untuk \( \cos(2x) \), yaitu:</p>
+                <p>
+                    \( \cos(2x) = 1 - 2\sin^2(x)
+                \)
+                </p>
+                <p>Maka, ekspresi yang kita punya menjadi:</p>
+                <p>
+                    \( 1 - \cos(2x) = 1 - \left(1 - 2\sin^2(x)\right) = 2\sin^2(x)
+                \)
+                </p>
+                <p>Sehingga, limitnya menjadi:</p>
+                <p>
+                    \( \lim_{x \to 0} \frac{2\sin^2(x)}{x^2} = 2 \lim_{x \to 0} \left(\frac{\sin(x)}{x}\right)^2 = 2 \cdot 1^2 = 2
+                \)
+                </p>
+                <p>Karena \( \lim_{x \to 0} \frac{\sin(x)}{x} = 1 \), maka hasilnya adalah 2.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let attempts = {1: 0, 2: 0, 3: 0}; // Track attempts for each question
+
+        function checkAnswer(questionId, correctAnswer) {
+            const answer = document.getElementById(`answer${questionId}`).value.trim();
+            const notification = document.getElementById(`notification${questionId}`);
+            const hint = document.getElementById(`hint${questionId}`);
+            const explanation = document.getElementById(`explanation${questionId}`);
+            
+            attempts[questionId]++;
+
+            if (answer === correctAnswer) {
+                notification.textContent = "Jawaban Anda benar!";
+                notification.className = "notification success";
+                hint.style.display = "none"; // Hide hint after correct answer
+                explanation.style.display = "block"; // Show explanation
+            } else {
+                if (attempts[questionId] === 1) {
+                    hint.style.display = "block"; // Show hint after first wrong attempt
+                } else if (attempts[questionId] >= 3) {
+                    notification.textContent = "Jawaban Anda salah. Cek pembahasan.";
+                    notification.className = "notification error";
+                    hint.style.display = "none"; // Hide hint after 3rd attempt
+                    explanation.style.display = "block"; // Show explanation after 3rd wrong attempt
+                } else {
+                    notification.textContent = "Jawaban Anda salah. Coba lagi.";
+                    notification.className = "notification error";
+                }
+                notification.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
