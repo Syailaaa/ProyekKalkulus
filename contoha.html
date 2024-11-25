@@ -3,49 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Soal Limit Fungsi Aljabar</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Contoh Soal Limit Matematika</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-  .back-btn{
-  margin: 0;
-  color: #fff8e1;
-  font-size: 1em;
-  letter-spacing: 1px;
-  font-weight: bold;
+      /* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body style dengan gradasi warna */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #052659, #5483B3, #7DA0CA, #C1E8FF); /* Gradasi warna */
+    background-size: 400% 400%; /* Untuk animasi */
+    animation: gradientBackground 15s ease infinite; /* Animasi lembut */
+    color: #052659; /* Warna teks utama */
+    padding: 20px;
+    line-height: 1.6;
+/* Animasi gradasi warna */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
     }
-    /* Atur ukuran teks secara default */
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Kontainer utama */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+/* Header soal */
+.soal h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #052659;
+}
+/* Paragraf */
 .soal p {
-    font-size: 16px; /* Ukuran default dalam piksel */
-    line-height: 1.8; /* Menyesuaikan jarak antar baris */
-    color: #052659; /* Warna teks */
+margin-bottom: 15px;
+    color: #052659;
 }
-
-/* Ukuran berbeda untuk perangkat kecil */
+    /* Penekanan pada teks penting */
+.soal p strong {
+    color: #5483B3; /* Warna teks penekanan */
+}
+/* Tombol kembali */
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff8e1; /* Warna teks kuning lembut */
+    background-color: #5483B3; /* Warna biru untuk tombol */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan pada tombol */
+}
+.back-btn:hover {
+    background-color: #7DA0CA; /* Warna biru lebih terang saat hover */
+    transform: scale(1.05); /* Sedikit pembesaran */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Efek bayangan lebih besar */
+}
+/* Responsif untuk perangkat kecil */
 @media (max-width: 768px) {
-    .soal p {
-        font-size: 14px; /* Ukuran lebih kecil untuk layar kecil */
+    .container {
+        padding: 15px;
+    }
+    .back-btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
     }
 }
-
-/* Menekankan paragraf tertentu */
-.soal p.important {
-    font-size: 18px; /* Ukuran teks lebih besar */
-    font-weight: bold; /* Teks lebih tebal */
-    color: #5483B3; /* Warna teks berbeda */
-}
-
     </style>
 </head>
 <body>
+    <header>
+        <h1>Contoh Soal Limit Fungsi Aljabar</h1>
+    </header>
 <div class="container">
     <!-- Soal 1 -->
     <div class="soal" id="soal1">
-        <h3>Soal 1 : </h3>
+        <h3 style="text-align: center;">Limit Fungsi Aljabar</h3>
+        <p><strong> Soal 1 : </strong></p>
         <p>Hitung nilai limit berikut:</p>
         <p>
             \[
@@ -75,33 +134,30 @@
             = \frac{-(x - 1)}{(x - 1)(x + 1)} = \frac{-1}{x + 1}
             \]
         </p>
-        <p> Sekarang kita substitusi \(x = 1\):
-            \[\lim_{{x \to 1}} \frac{-1}{x + 1} = \frac{-1}{1 + 1} = \frac{-1}{2}\] </p>
+        <p>
+            Sekarang kita substitusi \(x = 1\):
+            \[
+            \lim_{{x \to 1}} \frac{-1}{x + 1} = \frac{-1}{1 + 1} = \frac{-1}{2}
+            \]
+        </p>
         <p><strong>
             Jadi, nilai dari limit tersebut adalah \(\frac{-1}{2} \). 
         </strong></p>
-        <p> </p>
     </div>    
-        
-
     <!-- Soal 2 -->
     <div class="soal" id="soal2">
-        <h3>Soal 2:</h3>
+        <p><strong>Soal 2:</strong></p>
         <p>Hitung nilai limit berikut:</p>
         <p>\[\lim_{{x \to 2}} \frac{{x^2 - 4}}{{x - 2}}\]</p>
         <p><strong>Penyelesaian: </strong></p>
         <p>Untuk menyelesaikan limit ini, kita bisa memfaktorkan pembilang:</p>
         <p>\[\frac{{x^2 - 4}}{{x - 2}} = \frac{{(x + 2)(x - 2)}}{{x - 2}} = x + 2\]</p>
         <p>Dengan demikian, \[\lim_{{x \to 2}} \frac{{x^2 - 4}}{{x - 2}} = 4\].</p>
-        <p><strong>Jadi, nilai dari limit tersebut adalah \(4 \). </strong>
-        </p>
-    <p></p>
+        <p><strong>Jadi, nilai dari limit tersebut adalah \(4 \). </strong></p>
     </div>
-
     <!-- Soal 3 -->
-
         <div class="soal" id="soal3">
-            <h3>Soal 3:</h3>
+            <p><strong>Soal 3:</strong></p>
             <p>Hitung nilai limit berikut:</p>
             <p>
                 \[
@@ -127,11 +183,9 @@
                 \lim_{{x \to 4}} \frac{1}{\sqrt{x} + 2} = \frac{1}{2 + 2} = \frac{1}{4}
                 \]
             </p>
-            <p><strong>Jadi, nilai dari limit tersebut adalah \(\frac{1}{4} \). </strong></p>
-            <p></p>
-        </div>
-    <nav><a href="aljabar.html" class="back-btn">Kembali</a>
+           <p><strong>Jadi, nilai dari limit tersebut adalah \(\frac{1}{4} \). </strong></p>
+             <nav><a href="aljabar.html" class="back-btn">Kembali</a>
     </nav>
-</div>
-</body>
+        </div>
+    </body>
 </html>    
