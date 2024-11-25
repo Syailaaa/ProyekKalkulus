@@ -17,16 +17,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Body style dengan gradasi warna */
+
+/* Latar belakang utama */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #052659, #5483B3, #7DA0CA, #C1E8FF); /* Gradasi warna */
-    background-size: 400% 400%; /* Untuk animasi */
-    animation: gradientBackground 15s ease infinite; /* Animasi lembut */
-    color: #052659; /* Warna teks utama */
+    background: linear-gradient(135deg, #052659, #5483B3, #7DA0CA, #C1E8FF);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    color: #052659;
     padding: 20px;
     line-height: 1.6;
-/* Animasi gradasi warna */
+}
+
+/* Animasi gradasi */
 @keyframes gradientBackground {
     0% {
         background-position: 0% 50%;
@@ -38,17 +41,16 @@ body {
         background-position: 0% 50%;
     }
 }
+
 /* Kontainer utama */
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
+
 /* Kotak untuk setiap soal */
-.soal {
+.soal-box {
     background: rgba(255, 255, 255, 0.9); /* Latar putih transparan */
     border: 2px solid #5483B3; /* Bingkai biru */
     border-radius: 10px; /* Sudut membulat */
@@ -59,50 +61,57 @@ body {
 }
 
 /* Efek hover pada kotak */
-.soal:hover {
+.soal-box:hover {
     transform: scale(1.02); /* Sedikit membesar */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
 }
-/* Header soal */
-.soal h3 {
+
+/* Judul soal */
+.soal-box h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #052659;
 }
-/* Paragraf */
-.soal p {
-margin-bottom: 15px;
+
+/* Paragraf soal */
+.soal-box p {
+    margin-bottom: 15px;
     color: #052659;
 }
-    /* Penekanan pada teks penting */
-.soal p strong {
-    color: #5483B3; /* Warna teks penekanan */
+
+/* Penekanan teks */
+.soal-box p strong {
+    color: #5483B3;
 }
+
 /* Tombol kembali */
 nav {
     margin-top: 20px;
     text-align: center;
 }
+
 .back-btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1em;
-    color: #fff8e1; /* Warna teks kuning lembut */
-    background-color: #5483B3; /* Warna biru untuk tombol */
+    color: #fff8e1;
+    background-color: #5483B3;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan pada tombol */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .back-btn:hover {
-    background-color: #7DA0CA; /* Warna biru lebih terang saat hover */
-    transform: scale(1.05); /* Sedikit pembesaran */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Efek bayangan lebih besar */
+    background-color: #7DA0CA;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
 /* Responsif untuk perangkat kecil */
 @media (max-width: 768px) {
-    .container {
+    .soal-box {
         padding: 15px;
     }
     .back-btn {
@@ -110,6 +119,7 @@ nav {
         padding: 8px 16px;
     }
 }
+
     </style>
 </head>
 <body>
@@ -118,7 +128,7 @@ nav {
     </header>
 <div class="container">
     <!-- Soal 1 -->
-    <div class="soal" id="soal1">
+    <div class="soal-box" id="soal1">
         <h3 style="text-align: center;">Limit Fungsi Aljabar</h3>
         <p><strong> Soal 1 : </strong></p>
         <p>Hitung nilai limit berikut:</p>
@@ -161,7 +171,7 @@ nav {
         </strong></p>
     </div>    
     <!-- Soal 2 -->
-    <div class="soal" id="soal2">
+    <div class="soal-box" id="soal2">
         <p><strong>Soal 2:</strong></p>
         <p>Hitung nilai limit berikut:</p>
         <p>\[\lim_{{x \to 2}} \frac{{x^2 - 4}}{{x - 2}}\]</p>
@@ -172,7 +182,7 @@ nav {
         <p><strong>Jadi, nilai dari limit tersebut adalah \(4 \). </strong></p>
     </div>
     <!-- Soal 3 -->
-        <div class="soal" id="soal3">
+        <div class="soal-box" id="soal3">
             <p><strong>Soal 3:</strong></p>
             <p>Hitung nilai limit berikut:</p>
             <p>
